@@ -27,7 +27,7 @@ const feedbackDiv = document.getElementById("form-feedback");
     }
 
     //password validation
-    if (password.length < 6) {
+    if (password.length < 8) {
         isValid = false;
         messages.push("Password must be at least 8 characters long.");
     }
@@ -36,7 +36,7 @@ const feedbackDiv = document.getElementById("form-feedback");
     feedbackDiv.style.display = "block";
 
     if(isValid) {
-        feedbackDiv.textContent = "Registration Successful";
+        feedbackDiv.textContent = "Registration Successful!";
         feedbackDiv.style.color = "#28a745"; 
     } else {
         feedbackDiv.innerHTML = messages.join("br");
